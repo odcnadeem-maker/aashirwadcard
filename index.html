@@ -1,83 +1,97 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Aashirwad Card Calendar Portfolio</title>
+    <style>
+        /* CSS reset aur base styles */
+        body, h1, h2, p, a {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Dark background container */
+        body {
+            background-color: #0c1421;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Top Navbar */
+        .navbar {
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: #4da6ff;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links a {
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+        /* Hero section (central part) */
+        .hero {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .main-heading {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .sub-heading {
+            font-size: 16px;
+            margin-bottom: 30px;
+            color: #b0b0b0; /* Light gray color for subheading */
+        }
+
+        /* Central light blue button */
+        .contact-btn {
+            background-color: #4da6ff;
+            color: black;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+    </style>
 </head>
 <body>
-    <header>
+    <!-- Top Nav-bar -->
+    <nav class="navbar">
         <div class="logo">MyPortfolio</div>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Skills</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
 
-    <main>
-        <section class="hero" id="home">
-            <div class="hero-content">
-                <h1>Hi, I'm Your Name</h1>
-                <p>I am a passionate Developer / Designer creating awesome digital experiences.</p>
-                <a class="btn" href="#contact">Get In Touch</a>
-            </div>
-        </section>
-
-        <section id="skills">
-            <h2>My Skills</h2>
-            <div class="skills-container">
-                <div class="skill-box">HTML &amp; CSS</div>
-                <div class="skill-box">JavaScript</div>
-                <div class="skill-box">UI/UX Design</div>
-                <div class="skill-box">Git &amp; GitHub</div>
-            </div>
-        </section>
-
-        <section id="projects">
-            <h2>My Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3>Project One</h3>
-                    <p>Short description of your amazing project and what tools you used.</p>
-                    <a class="project-link" href="#">View Project ?</a>
-                </div>
-                <div class="project-card">
-                    <h3>Project Two</h3>
-                    <p>Short description of your amazing project and what tools you used.</p>
-                    <a class="project-link" href="#">View Project ?</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="contact">
-            <div style="font-family: Arial, sans-serif; line-height: 1.6;">
-                <!-- Name -->
-                <h2>Nadeem Khan</h2>
-
-                <!-- Clickable Phone Number -->
-                <p>
-                    ?? Phone: 
-                    <a href="tel:+917500054000" style="color: #007bff; text-decoration: none;">
-                        +91 7500054000
-                    </a>
-                </p>
-
-                <!-- Clickable Gmail ID -->
-                <p>
-                    ?? Email: 
-                    <a href="mailto:aashirwadnadeem@gmail.com" style="color: #007bff; text-decoration: none;">
-                        aashirwadnadeem@gmail.com
-                    </a>
-                </p>
-            </div>
-        </section>
+    <!-- Main Hero section -->
+    <main class="hero">
+        <h1 class="main-heading">Welcome to Aashirwad Card Calendar</h1>
+        <p class="sub-heading">I am a passionate Developer / Designer creating awesome digital experiences.</p>
+        <a href="#" class="contact-btn">Get In Touch</a>
     </main>
-
-    <footer>
-        &copy; 2026 Your Name. All rights reserved.
-    </footer>
 </body>
 </html>
