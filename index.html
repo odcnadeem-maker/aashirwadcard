@@ -4,7 +4,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aashirwad Card Calendar Portfolio</title>
     <style>
-        /* CSS reset aur base styles */
         body, h1, h2, p, a {
             margin: 0;
             padding: 0;
@@ -14,7 +13,6 @@
             font-family: Arial, sans-serif;
         }
 
-        /* Dark background container */
         body {
             background-color: #0c1421;
             height: 100vh;
@@ -22,7 +20,6 @@
             flex-direction: column;
         }
 
-        /* Top Navbar */
         .navbar {
             padding: 20px 50px;
             display: flex;
@@ -41,7 +38,6 @@
             font-size: 14px;
         }
 
-        /* Hero section (central part) */
         .hero {
             flex-grow: 1;
             display: flex;
@@ -52,7 +48,7 @@
             padding: 0 20px;
         }
 
-        .hero-title {
+        .main-heading {
             font-size: 48px;
             font-weight: bold;
             margin-bottom: 10px;
@@ -60,11 +56,29 @@
 
         .sub-heading {
             font-size: 16px;
-            margin-bottom: 30px;
-            color: #b0b0b0; /* Light gray color for subheading */
+            margin-bottom: 25px;
+            color: #b0b0b0;
         }
 
-        /* Central light blue button */
+        .contact-info {
+            margin-bottom: 30px;
+            font-size: 18px;
+        }
+
+        .contact-info p {
+            margin: 10px 0;
+        }
+
+        .contact-info a {
+            color: #4da6ff;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
         .contact-btn {
             background-color: #4da6ff;
             color: black;
@@ -76,7 +90,6 @@
     </style>
 </head>
 <body>
-    <!-- Top Nav-bar -->
     <nav class="navbar">
         <div class="logo">MyPortfolio</div>
         <div class="nav-links">
@@ -87,11 +100,17 @@
         </div>
     </nav>
 
-    <!-- Main Hero section -->
     <main class="hero">
-        <h1 class="hero-title">Welcome To Aashirwad card callendar</h1>
+        <h1 class="main-heading">Welcome to Aashirwad Card Calendar</h1>
+        <h2 style="font-size: 28px; margin-bottom: 15px; color: #e0e0e0;">Nadeem Khan</h2>
         <p class="sub-heading">I am a passionate Developer / Designer creating awesome digital experiences.</p>
-        <a href="#" class="contact-btn">Get In Touch</a>
+        
+        <div class="contact-info">
+            <p>?? Phone: <a href="tel:+917500054000">+91 7500054000</a></p>
+            <p>?? Email: <a href="mailto:aashirwadnadeem@gmail.com">aashirwadnadeem@gmail.com</a></p>
+        </div>
+
+        <a href="mailto:aashirwadnadeem@gmail.com" class="contact-btn">Get In Touch</a>
     </main>
 </body>
 </html>
